@@ -1,5 +1,4 @@
 * {
-	/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 	font-family: "Roboto Mono", monospace;
 	font-size: 30px;
 	margin: 0;
@@ -31,7 +30,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 25px;
+	/* padding: 25px; */
 	width: 100%;
 
 	/* color: #ffffff;
@@ -42,7 +41,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	padding: 25px;
-	/* background: #fff; */
 	color: #272727;
 	width: 100%;
 }
@@ -111,18 +109,15 @@ movie-list-header {
 	width: 100%;
 }
 .remove-complete-btn {
-	/* transition: color 150ms ease-in-out; */
-	
-	/* position: absolute; */
+	position: absolute;
 	right: 12vw;
-	top: 12rem;
+	top: 9.8rem;
 	border: 0;
   color: #ffffff;
   background: #da1e26;
   font-weight: bold;
   padding: 15px 20px;
 	font-size: 0.5em;
-  /* font-size: 16px; */
   border-radius: 4px;
   margin-top: 20px;
   cursor: pointer;
@@ -134,6 +129,10 @@ movie-list-header {
 .remove-complete-btn:active {
 	color: #ff652f;
 }
+/* .movie-template {
+	display: block;
+	flex-direction: row;
+} */
 .movie-list-wrapper {
 	/* background: #fff; */
 	color: #fff;
@@ -143,6 +142,8 @@ movie-list-header {
 	padding: 15px 25px 25px 25px;
 }
 .movie-list li {
+	/* display: flex;
+	flex-direction: row; */
 	list-style: none;
 	cursor: pointer;
 	padding: 10px 0;
