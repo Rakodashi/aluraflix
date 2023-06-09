@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Aluraflix</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluraflix</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -15,20 +16,43 @@
     </h1>
     <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
     <p class="page-subtitle">
-      Qual seu filme favorito?
+      What's your favourite movie?
     </p>
-    <div class="form-wrapper">
-      <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
-      <button onClick="adicionarFilme()">Adicionar Filme</button>
-    </div>
   </div>
-  <div id="listaFilmes"></div>
+
+    <div class="wrapper">
+        <div class="header">
+            <h1>Watch List</h1>
+        </div>
+            <div class="add-movie">
+                <input type="text" id="new-movie-input" placeholder="Add a movie or series">
+                <button class="add-movie-btn">+</button>
+            </div>
+            <div class="movie-list-header">
+                <h2>My List</h2>
+                <button class="remove-complete-btn">Clear</button>
+            </div>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                </ul>
+            </div>
+        </div>
+        <template id="movie-template">
+            <li class="movie">
+                <input type="checkbox">
+                <label>
+                    <span class="check-mark">&#10004;</span>
+                    <span class="custom-checkbox"></span>
+                </label>
+            </li>
+        </template>
+
+        <div id="listaFilmes"></div>
   
   <a href="https://alura.com.br/" target="_blank">
     <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
   </a>
 
-  <script src="main.js"></script>
-
+        <script src="main.js"></script>
 </body>
 </html>
